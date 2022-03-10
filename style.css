@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #c0fdff;
+}
+nav{
+    background-color: #48cae4;
+    padding: 10px 120px;
+    box-shadow: 0px 2px 50px 5px black;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+}
+img{
+    margin-right: 20px;
+}
+h1{
+    font: 700 2.5rem 'Dancing Script';
+    color: #003049;
+    text-shadow: 4px 4px 2px gray;
+    display: inline-block;
+}
+section{
+    width: 520px;
+    margin: 150px auto;
+    background-color: #1c0246;
+    padding: 30px 0px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 15px black;
+}
+@media screen and (max-width: 608px){
+    nav,main{
+        width: 608px;
+    }
+}
+h2{
+    text-align: center;
+    color: white;
+    font: 700 1.8rem 'ABeeZee';
+}
+form{
+    width: 78%;
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+}
+.editwrapper{
+    width: 70%;
+    margin-bottom: -20px;
+}
+input{
+    padding: 12px 13px;
+    width: 88%;
+    background-color: #1c0246;
+    font-weight: 500;
+    font-size: 1.2rem;
+    outline: none;
+    border: 3px solid #5d00a8;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    opacity: 0.5;
+}
+.editinput{
+    width: 80%;
+}
+.btn{
+    background: linear-gradient(0.25turn, #5d00a8, 60%, #9e28ff);
+    width: 12%; 
+    color: white;
+    font-weight: 500;
+    font-size: 1.7rem;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: font-size 200ms;
+}
+.btn:hover{
+    cursor: pointer;
+    font-size: 2.1rem;
+}
+.editbtn{
+    width: 20%;
+    font-size: 1.1rem;
+    transition: font-size 200ms;
+}
+.editbtn:hover{
+    font-size: 1.15rem;
+}
+ul{
+    position: relative;
+    list-style: none;
+    margin-top: -20px;
+}
+li{
+    height: 90px;
+    padding: 35px 20px;
+    margin: 7px 70px;
+    font: 700 1.1rem 'Merienda';
+    letter-spacing: 1.2px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: transform 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+li:hover{
+    transform: scale(1.055);
+}
+.li1{
+    background: linear-gradient(0.25turn, #9e28ff, 60%, #8002e7);
+    color: #8002e7;
+}
+.li2{
+    background: linear-gradient(0.25turn, rgb(0, 111, 202), 60%, rgb(0, 183, 255));
+    color: rgb(0, 183, 255);
+}
+.li3{
+    background: linear-gradient(0.25turn, rgb(161, 0, 153), 60%, rgb(255, 0, 255));
+    color: rgb(255, 0, 255);
+}
+.li4{
+    background: linear-gradient(0.25turn, rgb(0, 155, 13), 60%, rgb(0, 255, 13));
+    color: rgb(0, 255, 13);
+}
+.li5{
+    background: linear-gradient(0.25turn, rgb(201, 80, 0), 60%, rgb(255, 136, 0));
+    color: rgb(255, 136, 0);
+}
+.li6{
+    background: linear-gradient(0.25turn, rgb(163, 0, 0), 60%, rgb(255, 0, 0));
+    color: rgb(255, 0, 0);
+}
+.li7{
+    background: linear-gradient(0.25turn, rgb(114, 155, 0), 60%, rgb(187, 255, 0));
+    color: rgb(187, 255, 0);
+}
+.li8{
+    background: linear-gradient(0.25turn, rgb(0, 168, 173), 60%, rgb(0, 255, 234));
+    color: rgb(0, 255, 234);
+}
+.li9{
+    background: linear-gradient(0.25turn, rgb(0, 177, 124), 60%, rgb(0, 255, 179));
+    color: rgb(0, 255, 179);
+}
+.li10{
+    background: linear-gradient(0.25turn, rgb(247, 0, 255), 60%, rgb(255, 0, 119));
+    color: rgb(255, 0, 119);
+}
+.checkbox{
+    position: absolute;
+    left: -147px;
+    height: 18px;
+}
+i{
+    color: white;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 6px;
+    border-radius: 3px;
+    transition: 300ms;
+}
+i:hover{
+    cursor: pointer;
+    background-color: white;
+    color: inherit;
+}
+.disabled-spanedit-i{
+    color: #ccc;
+}
+.spantext{
+    color: white;
+    position: absolute;
+    left: 37px;
+    width: 185px;
+    font-size: 1rem;
+    word-wrap: break-word;
+}
+.linethrough{
+    text-decoration: 3.5px line-through black;
+}
+.spanedit{
+    position: absolute;
+    right: 120px;
+}
+.transparent-sheet{
+    width: 100%;
+    height: 105%;
+    z-index: 9;
+    position: absolute;
+    top: -50px;
+}
+.spantrash{
+    position: absolute;
+    right: 85px;
+}
+.spanup{
+    position: absolute;
+    right: 50px;
+}
+.spandown{
+    position: absolute;
+    right: 17px;
+}
